@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'regularFont';
+    src: url('Signika-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'semiBoldFont';
+    src: url('Signika-SemiBold.ttf');
+}
+
+body {
+    font-family: "regularFont";
+    font-size: 10pt;
+    margin: 0;
+}
+
+nav {
+    position: relative;
+    min-height: 50px;
+    background-color: #374f6b;
+    margin-bottom: 10px;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: left;
+    background-color: #374f6b;
+}
+
+#hlogo {
+    width: fit-content;
+}
+
+#hlogo > img {
+    width: 75px;
+    height: auto;
+    margin: 20px;
+}
+
+#htext {
+    font-size: 14pt;
+    color: ivory
+}
+
+#intro {
+    margin-left: 10px;
+    font-size: 15;
+}
+
+#main {
+    margin-bottom: 40px;
+}
+
+#main, .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container > img {
+    max-width: 50%;
+}
+
+.rotate > img {
+    transform: rotate(90deg);
+}
+
+footer {
+    width: 100%;
+    padding: 0;
+    background-color: #374f6b;
+    bottom: 0;
+}
+
+#fcont {
+    margin: 0 auto;
+    padding: 5px;
+    background-color: #374f6b;
+}
+
+#ftext {
+    margin: 1px;
+    margin-left: 10px;
+    color: ivory;
+}
