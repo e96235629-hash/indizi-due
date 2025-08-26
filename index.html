@@ -47,11 +47,77 @@
 
     </div>
 
+    <div class="container">
+        <div class="hacker">
+            Sono l'hacker. Inserisci qui sotto il numero del <br> tuo gruppo e otterrai il prossimo indizio.
+            <p contenteditable="true" id="mod">Inserisci il numero qui</p>
+            <button type="submit" id="btn" onclick="taketext()">Invia</button>
+        </div>
+        <div class="hacker" id="solholder">
+            <a href="grp1/grp1.html" class="sol">Benvenuto, gruppo 1</a>
+            <a href="grp2/grp2.html" class="sol">Benvenuto, gruppo 2</a>
+            <a href="grp3/grp3.html" class="sol">Benvenuto, gruppo 3</a>
+            <a href="grp4/grp4.html" class="sol">Benvenuto, gruppo 4</a>
+            <a href="grp5/grp5.html" class="sol">Benvenuto, gruppo 5</a>
+        </div>
+    </div>
+
+
+
     <footer>
         <div id="fcont">
             <p id="ftext"> &copy; Divisione di Villasezia della Polizia di Stato </p>
         </div>
     </footer>
+
+    <script>
+
+        function taketext() {
+            alements = document.getElementsByTagName("a");
+            hold = document.getElementById("solholder")
+            btn = document.getElementById("btn")
+
+            txt = document.getElementById("mod").innerHTML;
+
+            if (txt == "1" || txt == "Gruppo 1" || txt == "Gruppo1") {
+                alements[0].style.visibility = "visible";
+                alements[0].style.display = "block";
+                hold.style.visibility = "visible";
+                hold.style.display = "block";
+                btn.style.visibility = "hidden";
+                btn.style.display = "none"
+            } else if (txt == "2" || txt == "Gruppo 2" || txt == "Gruppo2") {
+                alements[1].style.visibility = "visible";
+                alements[1].style.display = "block";
+                hold.style.visibility = "visible";
+                hold.style.display = "block";
+                btn.style.visibility = "hidden";
+                btn.style.display = "none"
+            } else if (txt == "3" || txt == "Gruppo 3" || txt == "Gruppo3") {
+                alements[2].style.visibility = "visible";
+                alements[2].style.display = "block";
+                hold.style.visibility = "visible";
+                hold.style.display = "block";
+                btn.style.visibility = "hidden";
+                btn.style.display = "none"
+            } else if (txt == "4" || txt == "Gruppo 4" || txt == "Gruppo4") {
+                alements[3].style.visibility = "visible";
+                alements[3].style.display = "block";
+                hold.style.visibility = "visible";
+                hold.style.display = "block";
+                btn.style.visibility = "hidden";
+                btn.style.display = "none"
+            } else if (txt == "5" || txt == "Gruppo 5" || txt == "Gruppo5") {
+                alements[4].style.visibility = "visible";
+                alements[4].style.display = "block";
+                hold.style.visibility = "visible";
+                hold.style.display = "block";
+                btn.style.visibility = "hidden";
+                btn.style.display = "none"
+            }
+        }
+
+    </script>
 
 </body>
 
